@@ -4,5 +4,5 @@ Input: A mathematical function for an arbitrary waveform and parameter(s) to swe
 
 Output: A wavetable of n waveforms sampled at 192kHz
 
-
+Here is an example of a wavetable in Serum that was made with this script
 ![Here is an example of a wavetable in Serum that was made with this script](https://i.imgur.com/XJOPljO.png)
