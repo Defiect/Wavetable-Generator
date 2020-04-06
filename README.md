@@ -2,7 +2,7 @@ This script can accept any arbitrary mathematical function that you would like t
 
 Input: A mathematical function for an arbitrary waveform and parameter(s) to sweep through 
 
-Output: A wavetable of n waveforms sampled at 192kHz
+Output: A wavetable of n waveforms sampled at 384kHz
 
 Here is an example of a wavetable in Serum that was made with this script
 
