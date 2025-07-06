@@ -7,7 +7,7 @@ Name = 'Buzz'
 % each time you run the script
 
 % Creates subdirectory Wavetable in the current Matlab Path,
-% likely where the script is executed, then creates a furthe0r subdirectory
+% likely where the script is executed, then creates a further subdirectory
 % with the same name as provided above
 
 mkdir(fullfile('Wavetables', Name))
@@ -26,7 +26,7 @@ stop = 4.8722;
 F = 187.5; % This is 384000/2048
 
 % Size of Wavetable and number of iterations
-n = 10
+n = 10;
 
 for j = 1:n
 
@@ -57,10 +57,11 @@ y = 2*(y - min(y))/(max(y) - min(y)) - 1;
 
 
 % Write the waveform to the directory of the wavetable
-filename = "Wavetables\" + Name + '\' + "Waveform" + j + ".wav"
+filename = fullfile('Wavetables', Name, ['Waveform' num2str(j) '.wav']);
 
 audiowrite(filename,y,Fs,'BitsPerSample',32);
 
 end
 
-length(y)
+% Display the length of the final waveform for verification
+fprintf('Waveform length: %d samples\n', length(y));

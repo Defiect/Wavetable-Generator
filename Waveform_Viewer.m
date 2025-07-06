@@ -1,3 +1,6 @@
+% Parameter for waveform variation (example value)
+j = 5;
+
 % Function to define waveform
 ff = @(x)abs(tanh(x.^acsch(1./(-x+j*tan((1.5*x+5))))));
 
